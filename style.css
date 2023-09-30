@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: white;
+  --max-width: 1200px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 1.6rem;
+}
+section {
+  scroll-margin: 50px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  background-color: var(--purple500);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+  font-weight: bold;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+nav ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.2s ease-in;
+}
+.hero_section {
+  background-image: url(images/hero-img6.png);
+  height: 100vh;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+.hero_section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero_section h1 {
+  font-size: 9.6rem;
+}
+.hero_section h3 {
+  font-size: 3.2rem;
+}
+.music_section {
+  padding-top: 50px;
+  background: var(--purple500);
+}
+.music_section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.ipad-iphone-img {
+  margin-top: -400px;
+  position: relative;
+  top: 400px;
+}
+.primary_btn {
+  background-color: var(--red600);
+  color: white;
+}
+.secondary_btn {
+  background-color: var(--purple300);
+  color: white;
+}
+.about_music {
+  padding-top: 500px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.video-section {
+  background-image: url(images/video6.png);
+  min-height: 800px;
+  display: grid;
+  place-items: center;
+  color: white;
+  text-align: center;
+}
+
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -200px;
+}
+.hero-section,
+.video-section {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gift-section {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+  gap: 50px;
+}
+.gift-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-upper {
+  background-color: var(--purple600);
+  padding: 20px;
+}
+.footer-upper .container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+.footer-upper h4 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.footer-lower {
+  background-color: var(--purple300);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.gift-section {
+  scroll-margin: 120px;
+}
+
+@media (max-width: 1024px) {
+  .gift-card img {
+    width: 40rem;
+  }
+  .ipad-iphone-img {
+    margin-top: -20rem;
+    top: 20rem;
+  }
+  .about-music {
+    padding-top: 30rem;
+  }
+  .ipad-iphone-img img,
+  .mac-img img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gift-section {
+    flex-direction: column;
+  }
+  .gift-section img {
+    width: 100%;
+  }
+  html {
+    font-size: 40%;
+  }
+  nav ul {
+    display: none;
+  }
+  .menu_bar i {
+    font-size: 2.4rem;
+  }
+  .footer-upper .container {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .footer-upper .footer-links {
+    min-width: 20rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu_bar {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .ipad-iphone-img {
+    margin-top: -10rem;
+    top: -10rem;
+  }
+  .about-music {
+    padding-top: 15rem;
+  }
+}
